@@ -8,6 +8,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
+import "@fontsource/m-plus-rounded-1c"; // Default weight 400 
+import "@fontsource/m-plus-rounded-1c/700.css"; // Bold if needed
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

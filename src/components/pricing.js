@@ -30,14 +30,12 @@ function PricingCards() {
   ];
 
   return (
-    <div>
+    <section className="pricing-section" id="Pricing">
       <div className="pricing-card-container">
         {plans.map((planData, index) => (
           <div
             key={index}
-            className="pricing-card"
-            style={{ borderTop: `4px solid ${planData.color}` }}
-          >
+            className={`pricing-card border-top ${planData.plan === "Standard Plan" ? "standard-plan" : ""}`}>
             <h3 className="pricing-card-plan">{planData.plan}</h3>
             <p className="pricing-card-price">{planData.price}</p>
             <ul className="pricing-card-features">
@@ -45,17 +43,17 @@ function PricingCards() {
                 <li key={i}>{feature}</li>
               ))}
             </ul>
-            <button className="pricing-card-button">Purchase Now</button>
+            <button className="btn btn-letstalk">Get Started</button>
           </div>
         ))}
       </div>
 
       {/* Two buttons outside the cards */}
       <div className="pricing-global-buttons">
-        <button className="btn btn-letstalk">Let's Talk</button>
+        {/* <button className="btn btn-letstalk">Let's Talk</button> */}
         <button className="btn btn-services">Our Services</button>
       </div>
-    </div>
+    </section>
   );
 }
 
