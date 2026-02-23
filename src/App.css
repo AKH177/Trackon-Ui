@@ -10,19 +10,6 @@ body{
   background: linear-gradient(to right, #a8e8ea26, #41bdc0, #1f5f61);
   color: #f9f9f9;
 }
-
-.banner {
-  background-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2djZWs1Y2Z0Y3c5a29qMHpuYjNzNHNtOWZtejF2bnZqb25mZ3pkbyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/EdealKz0LxKTGs0hYA/giphy.webp');
-  background-color: #007bff;
-  padding: 16px 16px;
-  display: inline-block;
-  border-radius: 4px;
-  margin-bottom: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 10px;
-}
-
 .banner p {
   margin: 0;
   color: white;
@@ -32,7 +19,7 @@ body{
 .heading {
   font-size: 2.5rem;
   margin: 20px 0 10px;
-  color: black;
+  color: "white";
   font-family: roboto, sans-serif;
 }
 
@@ -40,7 +27,7 @@ body{
   font-size: 1.4rem;
   max-width: 600px;
   margin: 0 auto 30px;
-  color: #007bff;
+  color: whitesmoke;
   font-family: roboto, sans-serif;
 }
 
@@ -128,7 +115,7 @@ body{
 }
 
 .appImage{
-  background-image: url(./../public/trackon_dashboard.png);
+  background-image: url(./../public/dash_board.png);
   background-size: contain;
   background-position: center center;
   /* ensures true centering */
@@ -155,8 +142,25 @@ body{
 
 .pricing-section{
   padding: 3rem 1rem;
-  background: #f9f9f9;
+  background: white;
   text-align: center;
+}
+.pricing-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.pricing-header h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #33BFC4;
+  margin: 0;
+}
+
+.pricing-header p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
 }
 
 .pricing-section .border-top {
@@ -284,7 +288,7 @@ body{
 }
 
 .client-card {
-  background: #ffffff;
+  background: azure;
   border-radius: 10px;
   padding: 20px;
   width: 250px;
@@ -296,6 +300,24 @@ body{
 .client-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+.client-header {
+  text-align: center;      
+  margin-bottom: 30px;     
+}
+
+.client-header h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #030303;
+  margin: 0;
+  color: #33bfc4;
+}
+
+.client-header p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 8px;
 }
 
 .client-photo {
@@ -315,14 +337,14 @@ body{
 
 .client-company {
   font-size: 20px;
-  color: #050000;
+  color: #555;
   margin-bottom: 10px;
 }
 
 .client-details {
   font-size: 13px;
-  color: #555;
-  line-height: 1.4;
+  color: black;
+  line-height: 1.5;
 }
 
 .footer {
@@ -413,7 +435,7 @@ body{
 /* Image section */
 .appDetails {
   padding: 3rem 1rem;
-  background: #f9f9f9;
+  background:white;
   text-align: center;
 }
 

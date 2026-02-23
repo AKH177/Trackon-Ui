@@ -32,7 +32,7 @@ function Navbar() {
     <nav className="navbar">
       {/* Left side: Logo */}
       <div className="left">
-        <h2 className="logo navbarLogo">TrackOnFE</h2>
+        <h2 className="logo navbarLogo">TrackOn </h2>
       </div>
 
       {/* Middle: Navigation links */}
