@@ -5,7 +5,7 @@ function HeroSection() {
   const [activeSection, setActiveSection] = useState("Main page");
 
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       {/* Banner */}
       <div className="banner">
         <p>TRACKON PROTECT IS HERE</p>
@@ -22,18 +22,18 @@ function HeroSection() {
 
       {/* Buttons */}
       <div className="buttons">
-        <button className="primaryBtn">Get Started for free</button>
-        <button className="secondaryBtn"></button>
+        <button className="primaryBtn btn-yellow">Get Started for free</button>
+        {/* <button className="secondaryBtn"></button> */}
       </div>
 
       {/* Section Nav Links */}
-      <ul className="sectnavLinks">
+      {/* <ul className="sectnavLinks">
         {sectNavBar.map((item, index) => (
           <li key={index} onClick={() => setActiveSection(item)}>
             {item}
           </li>
         ))}
-      </ul>
+      </ul> */}
 
       {/* Conditional Rendering */}
       <div className="dashboard-banner">

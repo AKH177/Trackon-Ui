@@ -1,23 +1,32 @@
 body{
   background-color: #33bfc400;
+  font-family: 'M PLUS Rounded 1c', sans-serif !important;
+  font-weight: 600 !important;
 }
 
 .hero {
   text-align: center;
   padding: 60px 20px;
-  background-color: #f9f9f9;
+  background: linear-gradient(to right, #a8e8ea26, #41bdc0, #1f5f61);
   color: #f9f9f9;
 }
 
 .banner {
   background-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2djZWs1Y2Z0Y3c5a29qMHpuYjNzNHNtOWZtejF2bnZqb25mZ3pkbyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/EdealKz0LxKTGs0hYA/giphy.webp');
   background-color: #007bff;
-  padding: 8px 16px;
+  padding: 16px 16px;
   display: inline-block;
   border-radius: 4px;
   margin-bottom: 20px;
   font-weight: bold;
   cursor: pointer;
+  border-radius: 10px;
+}
+
+.banner p {
+  margin: 0;
+  color: white;
+  font-size: 14px;
 }
 
 .heading {
@@ -124,7 +133,7 @@ body{
   background-position: center center;
   /* ensures true centering */
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 65vh;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -144,19 +153,44 @@ body{
   margin-top: 30px;
 }
 
-.btn-letstalk {
-  cursor: pointer;
-  background: #33bfc4;
-  border: 1px solid #269093;
-  padding: 12px 24px;
-  color: #fff;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  border-radius: 30px;
+.pricing-section{
+  padding: 3rem 1rem;
+  background: #f9f9f9;
   text-align: center;
-  display: inline-block;   /* changed */
+}
+
+.pricing-section .border-top {
+  borderTop: 4px solid #33bfc4;
+}
+
+
+.btn-letstalk {
+  background: #33bfc4 !important;
+  border: 1px solid #269093 !important;
+  color: #fff !important;
+  font-size: 18px !important;
+  border-radius: 30px !important;
+  text-align: center !important;
+  display: inline-block !important;   /* changed */
   width: auto;             /* changed */
+}
+
+.btn-yellow{
+  background: #fdc20f !important;
+  border: 1px solid #fbc02d !important;
+  color: #000 !important;
+  font-size: 18px !important;
+  border-radius: 30px !important;
+  text-align: center !important;
+  display: inline-block !important;   /* changed */
+  width: auto;             /* changed */
+}
+
+.btn-letstalk:hover {
+  background: #269093 !important;
+  border: 1px solid #33bfc4 !important;
+  color: #fff !important;
+  transition: background 0.3s ease, border 0.3s ease !important;
 }
 
 /* Our Services button */
@@ -289,4 +323,133 @@ body{
   font-size: 13px;
   color: #555;
   line-height: 1.4;
+}
+
+.footer {
+  padding: 20px;
+}
+
+.footer-seperater {
+ border-right: #33bfc4 solid 1px;
+}
+
+.footer-logo{
+  color: #33bfc4;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-strip{
+  background-color: #33bfc4;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  margin-top: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+
+.footer-content h4 {
+  margin: 0;
+  color: #333;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  margin-bottom: 10px;
+}
+
+.footer-content p{
+  margin: 0;
+}
+
+.contact-form {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(51, 191, 196, 0.4);
+  padding: 2rem;
+}
+
+.contact-form .form-label {
+  font-weight: 600;
+  color: #33bfc4;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form .form-control {
+  border: 2px solid #33bfc4;
+  border-radius: 8px;
+  padding: 10px 12px;
+  transition: all 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+  border-color: #33bfc4;
+  box-shadow: 0 0 8px rgba(51, 191, 196, 0.6);
+}
+
+.btn-submit {
+  width: 100%;
+  background: linear-gradient(135deg, #33bfc4, #2aa3a8);
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(51, 191, 196, 0.5);
+}
+
+/* Image section */
+.appDetails {
+  padding: 3rem 1rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.appDetails-header {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #33bfc4;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.appImage {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.appImage img {
+  max-width: 280px;
+  border: 3px solid #33bfc4;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(51, 191, 196, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.appImage img:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 14px 30px rgba(51, 191, 196, 0.6);
 }
