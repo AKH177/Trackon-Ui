@@ -7,12 +7,9 @@ function HeroSection() {
   return (
     <section className="hero" id="hero">
       {/* Banner */}
-      <div className="banner">
-        <p>TRACKON PROTECT IS HERE</p>
-      </div>
-
+      
       {/* Headline */}
-      <h1 className="heading">The tracker for professionals!</h1>
+      <h1 className="heading">The Tracker For Professionals!</h1>
 
       {/* Subheading */}
       <p className="subheading">
@@ -21,10 +18,17 @@ function HeroSection() {
       </p>
 
       {/* Buttons */}
-      <div className="buttons">
-        <button className="primaryBtn btn-yellow">Get Started for free</button>
-        {/* <button className="secondaryBtn"></button> */}
-      </div>
+      {/* Buttons */}
+<div className="buttons">
+  <button
+    className="primaryBtn btn-yellow"
+    data-bs-toggle="modal"
+    data-bs-target="#contactModal"
+  >
+    Get Started for free
+  </button>
+  {/* <button className="secondaryBtn"></button> */}
+</div>
 
       {/* Section Nav Links */}
       {/* <ul className="sectnavLinks">

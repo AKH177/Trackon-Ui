@@ -25,6 +25,13 @@ function ClientDetails() {
   ];
 
   return (
+     <div className="client-section">
+      {/* Header Section */}
+      <div className="client-header">
+        <h2>Clients Who Trust Our Tool</h2>
+        <p>Driving growth through smarter insights</p>
+      </div>
+
     <div className="client-container">
       {clients.map((c, index) => (
         <div key={index} className="client-card">
@@ -34,6 +41,7 @@ function ClientDetails() {
           <p className="client-details">{c.details}</p>
         </div>
       ))}
+    </div>
     </div>
   );
 }

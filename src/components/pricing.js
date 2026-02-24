@@ -31,6 +31,10 @@ function PricingCards() {
 
   return (
     <section className="pricing-section" id="Pricing">
+    <div className="pricing-header">
+      <h2>Our Pricing Plans</h2>
+      <p>Choose the plan that fits your needs and scale with confidence.</p>
+      </div>
       <div className="pricing-card-container">
         {plans.map((planData, index) => (
           <div
@@ -43,7 +47,9 @@ function PricingCards() {
                 <li key={i}>{feature}</li>
               ))}
             </ul>
-            <button className="btn btn-letstalk">Get Started</button>
+            <button className="btn btn-letstalk"data-bs-toggle="modal"data-bs-target="#contactModal">
+                     Get Started
+            </button>
           </div>
         ))}
       </div>
